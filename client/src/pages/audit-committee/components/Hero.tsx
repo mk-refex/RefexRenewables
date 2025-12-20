@@ -10,13 +10,14 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className="relative h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative h-screen flex items-center justify-center"
       style={{
         backgroundImage: "url(img/bg.jpg)",
+        backgroundPosition: "top left",
       }}
     >
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+        <h1 className="text-black mb-6">
           Audit Committee
         </h1>
       </div>

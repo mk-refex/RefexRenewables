@@ -8,11 +8,12 @@ export default function Hero() {
 
   return (
     <section
-      className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url(img/bg.jpg)" }}
+      className="relative h-screen flex items-center justify-center"
+      style={{ backgroundImage: "url(img/bg.jpg)", 
+        backgroundPosition: "top left" }}
     >
       <div className="relative z-10 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-black uppercase">
+        <h1 className="text-black">
           Nomination and Remuneration Committee
         </h1>
       </div>

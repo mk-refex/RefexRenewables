@@ -3,29 +3,33 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white py-16 border-t border-gray-200">
+      <footer className="footer bg-white py-16 border-t border-gray-200">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+            <div className="lg:col-span-2">
               <img
                 src="https://refexrenewables.com/img/logo.png"
                 alt="Refex Renewables"
-                className="h-12 mb-6"
+                className="h-auto w-full max-w-[150px] mb-6"
               />
             </div>
 
-            <div>
-              <h4 className="font-bold text-gray-900 mb-4">
-                Registered office
+            <div className="lg:col-span-4">
+              <h4 className="font-bold text-gray-900 mb-4 pb-2">
+                Registered Office
               </h4>
               <p className="text-gray-700 mb-2">
+                <div className="flex gap-2">
+                <strong><i className="ri-map-pin-fill text-black"></i></strong>
+                <div>
+                <div className="mb-[16px]">
                 <strong>
                   Refex Renewables & Infrastructure Limited
                   <br />
                   CIN: L40100TN1994PLC028263
                 </strong>
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
                 Second Floor, Refex Towers, Sterling Road Signal,
                 <br />
                 313, Valluvar Kottam High Road,
@@ -33,11 +37,14 @@ export default function Footer() {
                 Nungambakkam, Chennai – 600034,
                 <br />
                 Tamil Nadu, India
+                </p>
+                </div>
+                </div>
               </p>
             </div>
 
-            <div>
-              <h4 className="font-bold text-gray-900 mb-4">Navigation</h4>
+            <div className="lg:col-span-2">
+              <h4 className="font-bold text-gray-900 mb-4 pb-2">Navigation</h4>
               <div className="space-y-2">
                 <a
                   href="/about-us"
@@ -68,8 +75,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div>
-              <h4 className="font-bold text-gray-900 mb-4">Services</h4>
+            <div className="lg:col-span-2">
+              <h4 className="font-bold text-gray-900 mb-4 pb-2">Services</h4>
               <a
                 href="/cbg-production"
                 className="block text-gray-700 hover:text-orange-500 transition-colors"
@@ -78,8 +85,8 @@ export default function Footer() {
               </a>
             </div>
 
-            <div>
-              <h4 className="font-bold text-gray-900 mb-4">Contact</h4>
+            <div className="lg:col-span-2">
+              <h4 className="font-bold text-gray-900 mb-4 pb-2">Contact</h4>
               <div className="space-y-2">
                 <a
                   href="tel:18001020765"
@@ -87,7 +94,7 @@ export default function Footer() {
                 >
                   <div className="flex items-center space-x-2">
                     <div className="w-5 h-5 flex items-center justify-center">
-                      <i className="ri-phone-line"></i>
+                      <i className="ri-phone-fill text-black"></i>
                     </div>
                     <span>1800 102 0765</span>
                   </div>
@@ -98,7 +105,7 @@ export default function Footer() {
                 >
                   <div className="flex items-center space-x-2">
                     <div className="w-5 h-5 flex items-center justify-center">
-                      <i className="ri-mail-line"></i>
+                      <i className="ri-mail-fill text-black"></i>
                     </div>
                     <span>cs@refexrenewables.com</span>
                   </div>

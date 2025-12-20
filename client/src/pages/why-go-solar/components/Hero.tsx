@@ -16,9 +16,9 @@ export default function Hero() {
       ></div>
 
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl mb-4">
-          <span className="text-black">An unlimited supply of </span>
-          <span className="font-bold text-black">clean energy</span>
+        <h1 className="text-black mb-4">
+          An unlimited supply of
+          <span className="text-5xl md:text-6xl lg:text-7xl font-bold px-4 py-2 inline-block">clean energy</span>
         </h1>
       </div>
 

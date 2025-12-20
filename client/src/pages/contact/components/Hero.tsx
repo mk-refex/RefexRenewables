@@ -14,8 +14,8 @@ export default function Hero() {
       }}
     >
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl md:text-7xl font-light text-black mb-8">
-          Clean. <span className="font-bold text-black">Green.</span> Smart
+        <h1 className="text-black mb-8">
+          Clean. <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-black">Green.</span> Smart
         </h1>
       </div>
 

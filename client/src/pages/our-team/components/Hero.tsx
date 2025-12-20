@@ -16,8 +16,8 @@ export default function Hero() {
       ></div>
 
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-black mb-4">
-          Driven to light up <span className="font-bold">your world!</span>
+        <h1 className="font-light text-black mb-4">
+          Driven to light up <span className="text-5xl md:text-6xl lg:text-7xl font-bold">your world!</span>
         </h1>
       </div>
 

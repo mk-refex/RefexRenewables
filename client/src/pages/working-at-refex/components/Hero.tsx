@@ -8,13 +8,16 @@ export default function Hero() {
 
   return (
     <section
-      className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url(/img/vaccancies/vaccancy-Banner.jpg)" }}
+      className="relative h-screen flex items-center justify-center "
+      style={{ backgroundImage: "url(/img/vaccancies/vaccancy-Banner.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+       }}
     >
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-4">
-          Working at{" "}
-          <span className="text-black px-4 py-2 inline-block">
+        <h1 className="text-black mb-4" style={{ fontSize: '3rem' }}>
+          Working at
+          <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-black px-4 py-2 inline-block">
             Refex Renewables
           </span>
         </h1>

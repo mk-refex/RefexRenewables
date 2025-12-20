@@ -117,3 +117,20 @@ html {
     margin-top: 3%;
   }
 }
+
+/* Footer heading underlines */
+.footer h4 {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.footer h4::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #df6420;
+  bottom: -8px;
+  left: 0;
+  display: inline-block;
+}
