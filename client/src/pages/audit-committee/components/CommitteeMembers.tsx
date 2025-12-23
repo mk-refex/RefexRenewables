@@ -1,24 +1,24 @@
-import React from 'react';
+import React from "react";
 
 const CommitteeMembers: React.FC = () => {
   const members = [
     {
-      name: 'Ms. Jayanthi Talluri',
-      position: 'Independent Director',
-      role: '(Chairperson)',
-      image: 'https://refexrenewables.com/img/investor/jayanthi.jpg',
+      name: "Ms. Jayanthi Talluri",
+      position: "Independent Director",
+      role: "(Chairperson)",
+      image: "https://refexrenewables.com/img/investor/jayanthi.jpg",
     },
     {
-      name: 'Mr. Dinesh Kumar Agarwal',
-      position: 'Non-Executive Director',
-      role: '(Member)',
-      image: 'https://refexrenewables.com/img/team/dinesh.jpg',
+      name: "Mr. Dinesh Kumar Agarwal",
+      position: "Non-Executive Director",
+      role: "(Member)",
+      image: "https://refexrenewables.com/img/team/dinesh.jpg",
     },
     {
-      name: 'Mr. Pillappan Amalnathan',
-      position: 'Independent Director',
-      role: '(Member)',
-      image: 'https://refexrenewables.com/img/team/Amalanathan.png',
+      name: "Mr. Pillappan Amalnathan",
+      position: "Independent Director",
+      role: "(Member)",
+      image: "https://refexrenewables.com/img/team/Amalanathan.png",
     },
   ];
 
@@ -30,6 +30,7 @@ const CommitteeMembers: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-2">
               <span className="text-orange-500">Audit</span> Committee
             </h2>
+            <div className="w-20 h-1 bg-[#FF6B35]"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
@@ -49,8 +50,12 @@ const CommitteeMembers: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">
                     {member.name}
                   </h3>
-                  <p className="text-gray-600 mb-1 text-center">{member.position}</p>
-                  <p className="text-orange-500 font-semibold text-center">{member.role}</p>
+                  <p className="text-gray-600 mb-1 text-center">
+                    {member.position}
+                  </p>
+                  <p className="text-orange-500 font-semibold text-center">
+                    {member.role}
+                  </p>
                 </div>
               </div>
             ))}

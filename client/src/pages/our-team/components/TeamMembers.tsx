@@ -156,9 +156,9 @@ His proven track record includes impactful assignments at industry-leading compa
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-2">
-                <span className="text-orange-500">Senior Management</span>{" "}
-                Personnel
+                Senior Management Personnel
               </h2>
+              <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -168,12 +168,14 @@ His proven track record includes impactful assignments at industry-leading compa
                   className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
                   onClick={() => setSelectedMember(member)}
                 >
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="flex justify-center pt-8 pb-4">
+                    <div className="w-48 h-48 rounded-full bg-gray-100 overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <div className="p-6 text-center">
                     <h3 className="text-lg font-bold text-orange-500 mb-2">

@@ -29,6 +29,7 @@ export default function CommitteeMembers() {
               <span className="text-orange-500">Nomination & Remuneration</span>{" "}
               Committee
             </h2>
+            <div className="w-20 h-1 bg-[#FF6B35]"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">

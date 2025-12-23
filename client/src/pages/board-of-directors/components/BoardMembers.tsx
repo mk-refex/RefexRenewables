@@ -160,7 +160,7 @@ export default function BoardMembers() {
     <>
       <section id="board-members" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="mb-16">
+          <div className="mb-16 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-2">
               <span className="text-[#FF6B35]"></span> Board of Directors
             </h2>

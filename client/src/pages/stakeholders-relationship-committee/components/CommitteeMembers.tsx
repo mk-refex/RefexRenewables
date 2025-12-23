@@ -26,14 +26,15 @@ const CommitteeMembers: React.FC = () => {
     <section id="content" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
+          <div className="mb-16 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-2">
               <span className="text-orange-500">Stakeholders Relationship</span>{" "}
               Committee
             </h2>
+            <div className="w-20 h-1 bg-[#FF6B35]"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {members.map((member, index) => (
               <div
                 key={index}
