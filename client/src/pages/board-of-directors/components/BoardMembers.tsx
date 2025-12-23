@@ -158,106 +158,108 @@ export default function BoardMembers() {
 
   return (
     <>
-      <section id="board-members" className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">
-              <span className="text-[#FF6B35]"></span> Board of Directors
-            </h2>
-            <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
-          </div>
+      <section id="board-members" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-2">
+                <span className="text-[#FF6B35]"></span> Board of Directors
+              </h2>
+              <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {boardMembers.slice(0, 3).map((member) => (
-              <div
-                key={member.id}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-                onClick={() => setSelectedMember(member)}
-              >
-                <div className="flex justify-center pt-8 pb-4">
-                  <div className="w-48 h-48 rounded-full bg-gray-100 overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-top"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = "/placeholder-avatar.jpg";
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+              {boardMembers.slice(0, 3).map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+                  onClick={() => setSelectedMember(member)}
+                >
+                  <div className="p-8 flex flex-col items-center">
+                    <div className="w-48 h-48 rounded-full bg-gray-100 overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover object-top"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = "/placeholder-avatar.jpg";
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-bold text-[#FF6B35] mb-2">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-900 font-semibold mb-4">
+                      {member.position}
+                    </p>
+                    <button
+                      className="text-[#FF6B35] font-semibold hover:underline whitespace-nowrap"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedMember(member);
                       }}
-                    />
+                    >
+                      Read More
+                    </button>
                   </div>
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-[#FF6B35] mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-900 font-semibold mb-4">
-                    {member.position}
-                  </p>
-                  <button
-                    className="text-[#FF6B35] font-semibold hover:underline whitespace-nowrap"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelectedMember(member);
-                    }}
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {boardMembers.slice(3, 6).map((member) => (
-              <div
-                key={member.id}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-                onClick={() => setSelectedMember(member)}
-              >
-                <div className="flex justify-center pt-8 pb-4">
-                  <div className="w-48 h-48 rounded-full bg-gray-100 overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-top"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = "/placeholder-avatar.jpg";
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+              {boardMembers.slice(3, 6).map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+                  onClick={() => setSelectedMember(member)}
+                >
+                  <div className="p-8 flex flex-col items-center">
+                    <div className="w-48 h-48 rounded-full bg-gray-100 overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover object-top"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = "/placeholder-avatar.jpg";
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-bold text-[#FF6B35] mb-2">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-900 font-semibold mb-4">
+                      {member.position}
+                    </p>
+                    <button
+                      className="text-[#FF6B35] font-semibold hover:underline whitespace-nowrap"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedMember(member);
                       }}
-                    />
+                    >
+                      Read More
+                    </button>
                   </div>
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-[#FF6B35] mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-900 font-semibold mb-4">
-                    {member.position}
-                  </p>
-                  <button
-                    className="text-[#FF6B35] font-semibold hover:underline whitespace-nowrap"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelectedMember(member);
-                    }}
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="flex justify-center">
-            <a
-              href="/pdf/RRIL-Ceased-Directors.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#FF6B35] text-white px-8 py-3 rounded font-semibold hover:bg-[#e55a2a] transition-colors whitespace-nowrap"
-            >
-              RRIL - Directors Ceased
-            </a>
+            <div className="flex justify-center">
+              <a
+                href="/pdf/RRIL-Ceased-Directors.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#FF6B35] text-white px-8 py-3 rounded font-semibold hover:bg-[#e55a2a] transition-colors whitespace-nowrap"
+              >
+                RRIL - Directors Ceased
+              </a>
+            </div>
           </div>
         </div>
       </section>

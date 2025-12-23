@@ -31,18 +31,20 @@ export default function CommitteeMembers() {
             <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {members.map((member, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-square overflow-hidden flex items-center justify-center p-8 bg-gray-50">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-48 h-48 rounded-full object-cover"
-                  />
+                <div className="p-8 flex flex-col items-center">
+                  <div className="w-48 h-48 rounded-full bg-gray-200 mb-6 overflow-hidden flex items-center justify-center">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-lg font-bold text-orange-500 mb-2">

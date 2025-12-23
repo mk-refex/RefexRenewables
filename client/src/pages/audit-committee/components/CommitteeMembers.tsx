@@ -33,7 +33,7 @@ const CommitteeMembers: React.FC = () => {
             <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {members.map((member, index) => (
               <div
                 key={index}
@@ -47,15 +47,17 @@ const CommitteeMembers: React.FC = () => {
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-600 mb-1 text-center">
-                    {member.position}
-                  </p>
-                  <p className="text-orange-500 font-semibold text-center">
-                    {member.role}
-                  </p>
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-600 mb-1 text-center">
+                      {member.position}
+                    </p>
+                    <p className="text-orange-500 font-semibold text-center">
+                      {member.role}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
