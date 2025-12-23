@@ -160,11 +160,11 @@ export default function BoardMembers() {
     <>
       <section id="board-members" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="mb-16 text-center">
+          <div className="mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-2">
               <span className="text-[#FF6B35]"></span> Board of Directors
             </h2>
-            <div className="w-20 h-1 bg-[#FF6B35]"></div>
+            <div className="w-20 h-[1px] bg-[#FF6B35]"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
