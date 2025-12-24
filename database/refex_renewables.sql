@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `refex_renewables` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `refex_renewables`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
 -- Host: localhost    Database: refex_renewables
@@ -296,7 +294,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `username_30` (`username`),
   UNIQUE KEY `username_31` (`username`),
   UNIQUE KEY `username_32` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +303,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'murugesh','murugesh.k@refex.co.in','$2b$10$/TzDqRNBMT1rk10MDYw/5.o5s6t/A9R0uS1aQHLWJFNYESxzsCYKi','Murugesh Kumar','admin','2025-12-06 06:52:09','2025-12-23 09:33:45',NULL,'2025-12-23 09:33:40','[{\"pageId\": \"investor-relations\", \"pageName\": \"Investor Relations\", \"accessedAt\": \"2025-12-23T09:33:45.833Z\"}, {\"pageId\": \"audit-committee\", \"pageName\": \"Audit Committee\", \"accessedAt\": \"2025-12-06T07:57:54.286Z\"}, {\"pageId\": \"board-of-directors\", \"pageName\": \"Board of Directors\", \"accessedAt\": \"2025-12-06T07:57:51.381Z\"}, {\"pageId\": \"our-team\", \"pageName\": \"Our Team\", \"accessedAt\": \"2025-12-06T07:57:50.699Z\"}, {\"pageId\": \"about-us\", \"pageName\": \"About Us\", \"accessedAt\": \"2025-12-06T07:57:49.705Z\"}, {\"pageId\": \"footer\", \"pageName\": \"Footer (Global)\", \"accessedAt\": \"2025-12-06T07:57:46.554Z\"}, {\"pageId\": \"header\", \"pageName\": \"Header (Global)\", \"accessedAt\": \"2025-12-06T07:57:45.636Z\"}]'),(2,'test','test@refex.co.in','$2b$10$qCxSoC5RQQKdn0lCnZPKG.bJHo/Ayf74uy4eYLp5lePn9Hbf.4.Qa','Test','user','2025-12-06 06:57:51','2025-12-16 09:16:04','[\"overview\", \"investor-relations\"]','2025-12-16 09:16:01','[{\"pageId\": \"investor-relations\", \"pageName\": \"Investor Relations\", \"accessedAt\": \"2025-12-16T09:16:04.858Z\"}]');
+INSERT INTO `users` VALUES (1,'murugesh','murugesh.k@refex.co.in','$2b$10$/TzDqRNBMT1rk10MDYw/5.o5s6t/A9R0uS1aQHLWJFNYESxzsCYKi','Murugesh Kumar','admin','2025-12-06 06:52:09','2025-12-24 10:27:50',NULL,'2025-12-24 10:27:42','[{\"pageId\": \"investor-relations\", \"pageName\": \"Investor Relations\", \"accessedAt\": \"2025-12-24T10:27:50.935Z\"}, {\"pageId\": \"audit-committee\", \"pageName\": \"Audit Committee\", \"accessedAt\": \"2025-12-06T07:57:54.286Z\"}, {\"pageId\": \"board-of-directors\", \"pageName\": \"Board of Directors\", \"accessedAt\": \"2025-12-06T07:57:51.381Z\"}, {\"pageId\": \"our-team\", \"pageName\": \"Our Team\", \"accessedAt\": \"2025-12-06T07:57:50.699Z\"}, {\"pageId\": \"about-us\", \"pageName\": \"About Us\", \"accessedAt\": \"2025-12-06T07:57:49.705Z\"}, {\"pageId\": \"footer\", \"pageName\": \"Footer (Global)\", \"accessedAt\": \"2025-12-06T07:57:46.554Z\"}, {\"pageId\": \"header\", \"pageName\": \"Header (Global)\", \"accessedAt\": \"2025-12-06T07:57:45.636Z\"}]'),(2,'test','test@refex.co.in','$2b$10$qCxSoC5RQQKdn0lCnZPKG.bJHo/Ayf74uy4eYLp5lePn9Hbf.4.Qa','Test','user','2025-12-06 06:57:51','2025-12-16 09:16:04','[\"overview\", \"investor-relations\"]','2025-12-16 09:16:01','[{\"pageId\": \"investor-relations\", \"pageName\": \"Investor Relations\", \"accessedAt\": \"2025-12-16T09:16:04.858Z\"}]'),(3,'vinay.a','vinay.a@refex.co.in','$2b$10$YPQ7i62xgyNX28sDTERDn.oDd3CHLLakWTwWY8LA944uGPpmhDpJG','Vinay Aggarwal','user','2025-12-24 10:29:22','2025-12-24 10:29:36','[\"overview\", \"investor-relations\"]','2025-12-24 10:29:34','[{\"pageId\": \"investor-relations\", \"pageName\": \"Investor Relations\", \"accessedAt\": \"2025-12-24T10:29:36.888Z\"}]');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -326,4 +324,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-23 15:10:45
+-- Dump completed on 2025-12-24 16:01:58
