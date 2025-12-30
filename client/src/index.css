@@ -5,11 +5,11 @@
 @layer base {
   /* Apply sans-serif globally to all website pages */
   html {
-    font-family: sans-serif;
+    font-family: "Sen";
   }
-  
+
   body {
-    font-family: sans-serif;
+    font-family: "Sen";
     @apply text-gray-900;
   }
 }
@@ -125,7 +125,7 @@ html {
 }
 
 .footer h4::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
