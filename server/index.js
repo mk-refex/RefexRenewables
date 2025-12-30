@@ -33,8 +33,8 @@ async function start() {
   const server = http.createServer(app);
   server.listen(port, () => {
     // eslint-disable-next-line no-console
-    console.log(`API server listening on http://localhost:${port}`);
-    console.log(`Client application available at http://localhost:${port}`);
+    console.log(`Server listening on port:${port}`);
+    // console.log(`Client application available at http://localhost:${port}`);
   });
 }
 
