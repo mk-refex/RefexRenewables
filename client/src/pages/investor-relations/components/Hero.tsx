@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-const API_URL = (import.meta as any).env?.VITE_API_URL || '';
+const API_URL = (import.meta as any).env?.VITE_API_URL || "";
 
 interface TitleItem {
   text: string;
-  size: 'small' | 'normal';
+  size: "small" | "normal";
   order: number;
 }
 
@@ -20,9 +20,9 @@ export default function Hero() {
     id: 0,
     imageUrl: null,
     titleItems: [
-      { text: 'Investor', size: 'small', order: 0 },
-      { text: '& Relations', size: 'normal', order: 1 }
-    ]
+      { text: "Investor", size: "small", order: 0 },
+      { text: "& Relations", size: "normal", order: 1 },
+    ],
   });
   const [loading, setLoading] = useState(true);
 
@@ -35,7 +35,7 @@ export default function Hero() {
           setHeroData(data);
         }
       } catch (error) {
-        console.error('Error fetching hero data:', error);
+        console.error("Error fetching hero data:", error);
       } finally {
         setLoading(false);
       }
@@ -45,24 +45,31 @@ export default function Hero() {
   }, []);
 
   const scrollToContent = () => {
-    const nextSection = document.querySelector('#content');
+    const nextSection = document.querySelector("#content");
     if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+      nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   // Render title items based on size
   const renderTitleItems = () => {
     // Use titleItems if available and not empty
-    if (heroData.titleItems && Array.isArray(heroData.titleItems) && heroData.titleItems.length > 0) {
+    if (
+      heroData.titleItems &&
+      Array.isArray(heroData.titleItems) &&
+      heroData.titleItems.length > 0
+    ) {
       // Sort by order to ensure correct display order
-      const sortedItems = [...heroData.titleItems].sort((a, b) => (a.order || 0) - (b.order || 0));
-      
+      const sortedItems = [...heroData.titleItems].sort(
+        (a, b) => (a.order || 0) - (b.order || 0)
+      );
+
       return sortedItems.map((item, index) => {
-        const sizeClass = item.size === 'small' 
-          ? 'text-3xl md:text-4xl font-light' 
-          : 'text-5xl md:text-7xl font-light';
-        
+        const sizeClass =
+          item.size === "small"
+            ? "text-3xl md:text-4xl font-light"
+            : "text-5xl md:text-7xl font-light";
+
         return (
           <span key={index} className={sizeClass}>
             {item.text}
@@ -71,12 +78,14 @@ export default function Hero() {
         );
       });
     }
-    
+
     // Fallback to legacy text if titleItems not available
     if (heroData.text) {
-      return <span className="text-5xl md:text-7xl font-light">{heroData.text}</span>;
+      return (
+        <span className="text-5xl md:text-7xl font-light">{heroData.text}</span>
+      );
     }
-    
+
     // Final fallback to default
     return (
       <>
@@ -99,15 +108,17 @@ export default function Hero() {
   }
 
   return (
-    <section 
+    <section
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: heroData.imageUrl ? `url(${heroData.imageUrl})` : undefined,
-        backgroundColor: heroData.imageUrl ? undefined : '#f3f4f6'
+        backgroundImage: heroData.imageUrl
+          ? `url(${heroData.imageUrl})`
+          : undefined,
+        backgroundColor: heroData.imageUrl ? undefined : "#f3f4f6",
       }}
     >
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-black mb-8 flex flex-wrap items-center justify-center gap-2">
+        <h1 className="text-black mb-8 justify-center gap-2">
           {renderTitleItems()}
         </h1>
       </div>

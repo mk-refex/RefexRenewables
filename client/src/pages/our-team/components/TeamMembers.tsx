@@ -93,20 +93,20 @@ He has previously worked for esteemed organizations such as CB Richard Ellis, Cu
 
 Academically, Suhail holds a Commerce degree with a Certification in Leadership Programme issued by the Project Management Institute.`,
     },
-    {
-      name: "Gagan Bihari Pattnaik",
-      position: "General Manager - ESG & Sustainability",
-      image: "/img/team/Gagan-Bihari-Pattnaik.png",
-      bio: `Gagan is a chartered environmentalist and sustainability professional (IEMA, UK, SEP-USGBC, USA) and a certified ESG analyst (CESGA®, EFFAS, Germany) with over 18 years of international experience.
+    //     {
+    //       name: "Gagan Bihari Pattnaik",
+    //       position: "General Manager - ESG & Sustainability",
+    //       image: "/img/team/Gagan-Bihari-Pattnaik.png",
+    //       bio: `Gagan is a chartered environmentalist and sustainability professional (IEMA, UK, SEP-USGBC, USA) and a certified ESG analyst (CESGA®, EFFAS, Germany) with over 18 years of international experience.
 
-His assignments include geographies such as India, USA, and the Middle East in Sustainability and ESG domain in the setting and driving Corporate Sustainability/ ESG Strategies leading to performance excellence.
+    // His assignments include geographies such as India, USA, and the Middle East in Sustainability and ESG domain in the setting and driving Corporate Sustainability/ ESG Strategies leading to performance excellence.
 
-In a nutshell, his professional expertise includes but is not limited to Decarbonization Strategy and Net Zero Goal, Climate Change and Adaptation, Built Sustainability (LEED), Energy Conservation, Audit, Sustainability Assurance & Verification, Circularity of Material, Water Stewardship, ESG Indices, and Matrices, ESG Performance Disclosure (BRSR, GRI, IIRC, TCFD, and CDP framework), CSR Project Implementation, Stakeholder Engagement, and Biodiversity Conservation program.
+    // In a nutshell, his professional expertise includes but is not limited to Decarbonization Strategy and Net Zero Goal, Climate Change and Adaptation, Built Sustainability (LEED), Energy Conservation, Audit, Sustainability Assurance & Verification, Circularity of Material, Water Stewardship, ESG Indices, and Matrices, ESG Performance Disclosure (BRSR, GRI, IIRC, TCFD, and CDP framework), CSR Project Implementation, Stakeholder Engagement, and Biodiversity Conservation program.
 
-Academically Gagan is an M. Tech in Civil–Environmental Engineering, Distinction (UPTU, India, 2004).
+    // Academically Gagan is an M. Tech in Civil–Environmental Engineering, Distinction (UPTU, India, 2004).
 
-He also holds a Diploma in ESG Analysis (EFFAS, Germany), Certificate in Corporate Sustainability (NYU Stern, USA) and a Certificate in CSR (IICA, Ministry of Corporate Affairs, India).`,
-    },
+    // He also holds a Diploma in ESG Analysis (EFFAS, Germany), Certificate in Corporate Sustainability (NYU Stern, USA) and a Certificate in CSR (IICA, Ministry of Corporate Affairs, India).`,
+    //     },
     {
       name: "Srivaths Varadharajan",
       position: "Chief Technology Officer",
